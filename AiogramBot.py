@@ -9,7 +9,7 @@ dp = Dispatcher()
 
 @dp.message(Command('start'))
 async def start(message: types.Message):
-    b1 = types.KeyboardButton(text='Открыть веб страницу', web_app=WebAppInfo(url='https://raw.githubusercontent.com/danbzg/Shop/main/index.html'))
+    b1 = types.KeyboardButton(text='Открыть веб страницу', web_app=WebAppInfo(url='https://danbzg.github.io/Shop/'))
     markup = types.ReplyKeyboardMarkup(keyboard=[[b1]])
     await message.answer('Привет, мой друг!', reply_markup=markup)
 
